@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { BsSearch } from 'react-icons/bs'
 import './searchBox.css';
 
 class SearchBox extends React.Component {
@@ -8,7 +8,7 @@ class SearchBox extends React.Component {
             <form action="#" id="searchBoxForm" method="GET" className="form-new search-form">
             <input type="text" name="Ntt" placeholder="¿Qué producto buscas hoy?" id="searchtextinput" autocomplete="off" className="form-control search-input" />
                 <button type="button" id="searchsubmitbutton" className="search-btn">
-                    
+                    <BsSearch />
                 </button>
             </form>
         </div>
