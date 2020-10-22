@@ -1,0 +1,46 @@
+.site-header .logo {
+    box-sizing:border-box;
+    color:rgb(61, 61, 61);
+    display:block;
+    font-family:Bogle;
+    font-size:14px;
+    height:50px;
+    line-height:20px;
+    padding-left:40px;
+    padding-right:37px;
+    text-size-adjust:100%;
+    width:229px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.site-header .logo img {
+    border-bottom-color:rgb(61, 61, 61);
+    border-bottom-style:none;
+    border-bottom-width:0px;
+    border-image-outset:0;
+    border-image-repeat:stretch;
+    border-image-slice:100%;
+    border-image-source:none;
+    border-image-width:1;
+    border-left-color:rgb(61, 61, 61);
+    border-left-style:none;
+    border-left-width:0px;
+    border-right-color:rgb(61, 61, 61);
+    border-right-style:none;
+    border-right-width:0px;
+    border-top-color:rgb(61, 61, 61);
+    border-top-style:none;
+    border-top-width:0px;
+    box-sizing:border-box;
+    color:rgb(61, 61, 61);
+    cursor:pointer;
+    display:inline;
+    font-family:Bogle;
+    font-size:14px;
+    height:50px;
+    line-height:20px;
+    text-size-adjust:100%;
+    vertical-align:middle;
+    width:152px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
