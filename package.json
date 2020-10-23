@@ -12,6 +12,8 @@
     "react-scripts": "3.4.4"
   },
   "scripts": {
+    "docker:build": "docker build -t walmart-web .",
+    "docker:run": "docker run -p 3000:80 walmart-web",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
