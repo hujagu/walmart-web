@@ -16,8 +16,10 @@
     "docker:run": "docker run -p 3000:80 walmart-web",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "npm run test:unit",
+    "test:coverage": "jest ./test/unit --coverage",
+    "test:unit": "jest --verbose ./test/unit"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,5 +35,38 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-jest": "^26.6.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "jest": "^26.6.1"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/test/setup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/mock/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/test/mock/styleMock.js"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!**/node_modules/**",
+      "!src/index.js"
+    ],
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
   }
 }
