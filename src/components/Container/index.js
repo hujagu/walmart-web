@@ -1,13 +1,11 @@
 import React from 'react';
-import ProductList from '../ProductList'
-import SearchBar from '../SearchBar';
+import Logo from '../Logo'
 import './container.css'
 
 class Container extends React.Component {
 	render() {
 		return <div className="wrapper">
-		<SearchBar />
-		<ProductList />
+		<Logo />
 	</div>
 	}
 }
