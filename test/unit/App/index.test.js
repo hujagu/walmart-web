@@ -9,7 +9,7 @@ describe("App ", () => {
     expect(wrapper.find("div").length).toBe(1);
   });
 
-  it("should be one Logo", () => {
-    expect(wrapper.find("Logo").length).toBe(1);
+  it("should be one SearchBar", () => {
+    expect(wrapper.find("SearchBar").length).toBe(1);
   });
 });

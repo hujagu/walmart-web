@@ -1,0 +1,36 @@
+.site-header {
+    background-color:rgb(8, 121, 201);
+    box-sizing:border-box;
+    color:rgb(61, 61, 61);
+    display:flex;
+    font-family:Bogle;
+    font-size:14px;
+    height:74px;
+    line-height:20px;
+    position:relative;
+    text-size-adjust:100%;
+    width:1905px;
+    z-index:9998;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.site-header .container {
+    align-items:center;
+    box-sizing:border-box;
+    color:rgb(61, 61, 61);
+    display:flex;
+    font-family:Bogle;
+    font-size:14px;
+    height:74px;
+    line-height:20px;
+    margin-left:272.5px;
+    margin-right:272.5px;
+    max-width:1360px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    text-size-adjust:100%;
+    width:1360px;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}

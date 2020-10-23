@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo from "../Logo";
+import SearchBar from '../SearchBar';
 
 function App() {
   return (
     <div className="wrapper">
-		<Logo />
-	</div>
+      <SearchBar />
+    </div>
   );
 }
 
