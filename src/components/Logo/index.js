@@ -6,6 +6,7 @@ class Logo extends React.Component {
     return <div className="logo">
       <img
         src={logo}
+        alt=""
         style={{
           width: "152px",
           height: "50px",

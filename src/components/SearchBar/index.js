@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchBox from '../SearchBox';
+import ProductList from '../ProductList';
 import Logo from '../Logo'
 import './searchBar.css';
 
@@ -27,12 +28,15 @@ class SearchBar extends React.Component {
     }
 
     render() {
-        return <header className="site-header">
-            <div className="container">
-                <Logo />
-                <SearchBox getData={this.getData}/>
-            </div>
-        </header>
+        return <div className="wrapper">
+            <header className="site-header">
+                <div className="container">
+                    <Logo />
+                    <SearchBox getData={this.getData} />
+                </div>
+            </header>
+            <ProductList products={this.state.products} />
+        </div>
     }
 }
 
