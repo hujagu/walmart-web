@@ -6,7 +6,8 @@ describe("ProductDetails ", () => {
   const product = {
     brand: "brand name",
     description: "description",
-    price: "100"
+    price: "100",
+    discount: "50%"
   }
 
   const wrapper = shallow(<ProductDetails product={product} />);
@@ -19,8 +20,8 @@ describe("ProductDetails ", () => {
     expect(wrapper.find("a").length).toBe(1);
   });
 
-  it("should be three span", () => {
-    expect(wrapper.find("span").length).toBe(3);
+  it("should be four span", () => {
+    expect(wrapper.find("span").length).toBe(4);
   });
 
   it("should be product_name must have correct value", () => {
@@ -52,7 +53,18 @@ describe("ProductDetails ", () => {
         .find("span")
         .first()
         .html()
-    ).toBe('<span class=\"price-sell\"><b>$ 100</b></span>');
+    ).toBe('<span class=\"price-sell\"><b>$ 100 </b></span>');
+
+  });
+
+  it("should be discount must have correct value", () => {
+    const secondDiv = wrapper.find("div").at(1);
+    expect(
+      secondDiv
+        .find("span")
+        .at(1)
+        .html()
+    ).toBe('<span><b>50%</b></span>');
 
   });
 

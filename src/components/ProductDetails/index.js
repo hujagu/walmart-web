@@ -12,7 +12,8 @@ class ProductDetails extends React.Component {
                 <span className="product-description js-ellipsis"><b>{product.description}</b></span>
             </a>
             <div className="product-price">
-                <span className="price-sell"><b>$ {product.price}</b></span>
+                <span className="price-sell"><b>$ {product.price} </b></span>
+                <span><b>{product.discount}</b></span>
             </div>
         </div>
     }
