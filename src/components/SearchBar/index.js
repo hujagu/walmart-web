@@ -6,12 +6,11 @@ import './searchBar.css';
 
 
 class SearchBar extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
             products: undefined
-        };
+        }
         this.getData = this.getData.bind(this);
     }
 
