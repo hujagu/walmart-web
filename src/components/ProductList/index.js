@@ -9,7 +9,7 @@ class ProductList extends React.Component {
     if(!products) return null
     return <div className="table-cell">
       {products.map(element => (
-        <Product key="id" product={element} />
+        <Product key={element._id} product={element} />
       ))}
 
     </div>

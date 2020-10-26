@@ -17,9 +17,12 @@ class SearchBar extends React.Component {
     getData = async (e) => {
         e.preventDefault();
         const search = e.target.elements.search.value;
-        const getData = await fetch(`https://walmart-service.herokuapp.com/products?search=${search}`);
-        //const getData = await fetch(`http://localhost:5000/products?search=${search}`);
-        const data = await getData.json();
+        let data = undefined
+        if (search.length >= 3 || Number.isInteger(Number(search))) {
+            const getData = await fetch(`https://walmart-service.herokuapp.com/products?search=${search}`);
+            //const getData = await fetch(`http://localhost:5000/products?search=${search}`);
+            data = await getData.json();
+        }
 
         this.setState({
             products: data
