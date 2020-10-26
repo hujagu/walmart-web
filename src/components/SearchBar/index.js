@@ -37,7 +37,7 @@ class SearchBar extends React.Component {
                     <SearchBox getData={this.getData} />
                 </div>
             </header>
-            <ProductList products={this.state.products} />
+            <ProductList key='productList' products={this.state.products} />
         </div>
     }
 }

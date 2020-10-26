@@ -8,7 +8,7 @@ class Product extends React.Component {
 
     render() {
         const { product } = this.props;
-        return <div className="box-product">
+        return <div key={product._id} className="box-product">
             <ProductImage product={product} />
             <div className="responsive-holder-xs">
                 <ProductDetails product={product} />
