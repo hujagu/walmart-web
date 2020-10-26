@@ -1,4 +1,5 @@
 import React from 'react';
+import ProductDiscount from '../ProductDiscount'
 import './productDetails.css'
 
 class ProductDetails extends React.Component {
@@ -13,7 +14,7 @@ class ProductDetails extends React.Component {
             </a>
             <div className="product-price">
                 <span className="price-sell"><b>$ {product.price} </b></span>
-                <span><b>{product.discount}</b></span>
+                <ProductDiscount product={product}/>
             </div>
         </div>
     }

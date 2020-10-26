@@ -20,8 +20,8 @@ describe("ProductDetails ", () => {
     expect(wrapper.find("a").length).toBe(1);
   });
 
-  it("should be four span", () => {
-    expect(wrapper.find("span").length).toBe(4);
+  it("should be three span", () => {
+    expect(wrapper.find("span").length).toBe(3);
   });
 
   it("should be product_name must have correct value", () => {
@@ -54,17 +54,6 @@ describe("ProductDetails ", () => {
         .first()
         .html()
     ).toBe('<span class=\"price-sell\"><b>$ 100 </b></span>');
-
-  });
-
-  it("should be discount must have correct value", () => {
-    const secondDiv = wrapper.find("div").at(1);
-    expect(
-      secondDiv
-        .find("span")
-        .at(1)
-        .html()
-    ).toBe('<span><b>50%</b></span>');
 
   });
 
