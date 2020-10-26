@@ -16,6 +16,7 @@
     "eject": "react-scripts eject",
     "test": "npm run test:unit",
     "test:coverage": "jest ./test/unit --coverage",
+    "test:integration": "jest --verbose ./test/integration",
     "test:unit": "jest --verbose ./test/unit"
   },
   "eslintConfig": {

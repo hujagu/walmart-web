@@ -10,7 +10,7 @@ class ProductList extends React.Component {
 
     return <div key="products" className="table-cell">
       {products.map(element => (
-        <Product key={element._id} product={element} />
+        <Product key='product' product={element} />
       ))}
     </div>
   }
